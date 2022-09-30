@@ -1,0 +1,22 @@
+﻿<Window x:Name="ventanaCalculadora" x:Class="Tema2_CalculadoraBasica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema2_CalculadoraBasica"
+        mc:Ignorable="d"
+        Title="Calculadora basica" Height="397" Width="607" Icon="assets/calculadora.ico">
+    <Grid>
+        <TextBlock x:Name="textoOperador1" HorizontalAlignment="Left" Margin="52,74,0,0" TextWrapping="Wrap" Text="Operador 1" VerticalAlignment="Top" Height="21"/>
+        <TextBlock x:Name="textoOperador2" HorizontalAlignment="Left" Margin="52,126,0,0" TextWrapping="Wrap" Text="Operador 2" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textoSimboloOperador" HorizontalAlignment="Left" Margin="52,190,0,0" TextWrapping="Wrap" Text="Operador" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textoResultado" HorizontalAlignment="Left" Margin="52,260,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top"/>
+        <TextBox x:Name="boxOperador1" HorizontalAlignment="Left" Height="23" Margin="142,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="boxOperador2" HorizontalAlignment="Left" Height="23" Margin="142,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="boxOperador" HorizontalAlignment="Left" Height="23" Margin="142,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="boxOperador_TextChanged"/>
+        <TextBox x:Name="boxResultado" HorizontalAlignment="Left" Height="23" Margin="142,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
+        <Button x:Name="calcularButton" Content="Calcular" HorizontalAlignment="Left" Margin="409,72,0,0" VerticalAlignment="Top" Width="75" Click="calcularButton_Click" IsEnabled="False" IsDefault="True"/>
+        <Button x:Name="limpiarButton" Content="Limpiar" HorizontalAlignment="Left" Margin="409,136,0,0" VerticalAlignment="Top" Width="75" Click="limpiarButton_Click" IsCancel="True"/>
+
+    </Grid>
+</Window>
